@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Lakers Roster Website</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0f1115; /* back to solid dark background */
+      color: #eee;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 25px;
+      background: #552583;
+      color: #fff;
+    }
+    header h1 { margin: 0; font-size: 20px; }
+    nav a {
+      color: #FDB927;
+      text-decoration: none;
+      margin-left: 15px;
+      font-weight: bold;
+    }
+    main {
+      display: flex;
+      gap: 20px;
+      max-width: 1000px;
+      margin: 20px auto;
+      padding: 0 20px;
+    }
+    /* blog posts */
+    .posts { flex: 2; }
+    .post {
+      background: #1b1d25;
+      border-radius: 10px;
+      margin-bottom: 15px;
+      overflow: hidden;
+    }
+    .post img { width: 100%; display: block; }
+    .post .body { padding: 12px; }
+    .post h2 { margin: 0 0 6px; font-size: 18px; }
+    .post p { margin: 0; color: #aaa; font-size: 14px; }
+
+    /* sidebar roster */
+    aside {
+      flex: 1;
+      background: #101217;
+      padding: 15px;
+      border-radius: 10px;
+    }
+    .player {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 10px;
+      background: #161820;
+      padding: 8px;
+      border-radius: 8px;
+    }
+    .player img {
+      width: 40px; height: 40px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+    .player div { font-size: 14px; }
+    footer {
+      text-align: center;
+      padding: 15px;
+      color: #888;
+      font-size: 13px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Lakers ROSTER</h1>
+    <nav>
+      <a href="file:///C:/Users/ALJON/Documents/WEBSITE%20PROJECT/start.html">Home</a>
+      <a href="file:///C:/Users/ALJON/Documents/WEBSITE%20PROJECT/rosteralakers.html">Roster</a>
+      <a href="file:///C:/Users/ALJON/Documents/WEBSITE%20PROJECT/LakersStats.html">Stats</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- blog posts -->
+   <section class="posts" id="posts">
+  <h2 style="margin-bottom: 10px; color:#FDB927;">Latest News & Research</h2>
+
+  <article class="post">
+    <a href="your-video-1.mp4">
+      <img src="your-thumbnail-1.jpg" alt="Game Highlights">
+    </a>
+    <div class="body">
+      <h2>Lakers vs Rivals — Highlights</h2>
+      <p>Quick 3-minute recap with key plays and notes.</p>
+    </div>
+  </article>
+
+  <article class="post">
+    <a href="your-video-2.mp4">
+      <img src="your-thumbnail-2.jpg" alt="LeBron Spotlight">
+    </a>
+    <div class="body">
+      <h2>Player Spotlight: LeBron James</h2>
+      <p>Behind the scenes of leadership and training.</p>
+    </div>
+  </article>
+
+  <article class="post">
+    <a href="your-video-3.mp4">
+      <img src="your-thumbnail-3.jpg" alt="Draft News">
+    </a>
+    <div class="body">
+      <h2>NBA Draft 2026 — Lakers Picks</h2>
+      <p>Breaking down the Lakers’ strategy in the upcoming draft.</p>
+    </div>
+  </article>
+
+  <article class="post">
+    <a href="your-video-4.mp4">
+      <img src="your-thumbnail-4.jpg" alt="Injury Report">
+    </a>
+    <div class="body">
+      <h2>Injury Update: Anthony Davis</h2>
+      <p>Latest medical updates and expected return timeline.</p>
+    </div>
+  </article>
+
+  <article class="post">
+    <a href="your-video-5.mp4">
+      <img src="your-thumbnail-5.jpg" alt="Trade Rumors">
+    </a>
+    <div class="body">
+      <h2>Trade Rumors — Potential Midseason Moves</h2>
+      <p>Analyzing possible Lakers trades ahead of the deadline.</p>
+    </div>
+  </article>
+
+</section>
+
+
+    <!-- roster -->
+    <aside id="roster">
+      <h3>Roster</h3>
+      <div class="player">
+        <img src="lebron.jpg" alt="LeBron James">
+        <div>LeBron James — Forward</div>
+      </div>
+      <div class="player">
+        <img src="davis.jpg" alt="Anthony Davis">
+        <div>Anthony Davis — Center</div>
+      </div>
+      <div class="player">
+        <img src="reaves.jpg" alt="Austin Reaves">
+        <div>Austin Reaves — Guard</div>
+      </div>
+      <div class="player">
+        <img src="bronny.jpg" alt="Bronny James">
+        <div>Bronny James — Forward</div>
+      </div>
+      <div class="player">
+        <img src="ayton.jpg" alt="Deandre Ayton">
+        <div>Deandre Ayton — Center</div>
+      </div>
+      <div class="player">
+        <img src="vanderbilt.jpg" alt="Jarred Vanderbilt">
+        <div>Jarred Vanderbilt — Guard</div>
+      </div>
+      <div class="player">
+        <img src="laravia.jpg" alt="Jake Laravia">
+        <div>Jake Laravia — Forward</div>
+      </div>
+      <div class="player">
+        <img src="len.jpg" alt="Alex Len">
+        <div>Alex Len — Center</div>
+      </div>
+      <div class="player">
+        <img src="rui.jpg" alt="Rui Hachimura">
+        <div>Rui Hachimura — Guard</div>
+      </div>
+    </aside>
+  </main>
+
+  <footer>
+    © 2026 Lakers WEBSITE - Aljon Herras
+  </footer>
+
+</body>
+</html>

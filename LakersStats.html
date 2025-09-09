@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Lakers Player Stats — 2026</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    *{box-sizing:border-box;}
+    body{font-family:'Roboto', sans-serif; margin:0; background:#0f1115; color:#fff;}
+    
+    header{
+      background: linear-gradient(135deg,#552583,#FDB927);
+      padding:20px;
+      text-align:center;
+      box-shadow:0 4px 10px rgba(0,0,0,0.5);
+      position: relative;
+    }
+    header h1{margin:0; font-size:36px;}
+    
+    /* Top buttons */
+    .top-buttons{
+      position: absolute;
+      left:20px;
+      top:50%;
+      transform:translateY(-50%);
+      display:flex;
+      gap:10px;
+    }
+    .top-buttons a{
+      text-decoration:none;
+      padding:8px 16px;
+      border-radius:10px;
+      background:#FDB927;
+      color:#111;
+      font-weight:700;
+      transition:0.2s;
+    }
+    .top-buttons a:hover{
+      background:#fff;
+      color:#552583;
+    }
+
+    main{max-width:1100px; margin:30px auto; padding:0 20px;}
+    
+    table{
+      width:100%;
+      border-collapse: collapse;
+      background: #101217;
+      border-radius: 12px;
+      overflow:hidden;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+    }
+    th, td{
+      padding:12px 16px;
+      text-align:left;
+    }
+    th{
+      background: #552583;
+      color:#FDB927;
+      font-weight:700;
+    }
+    tr:nth-child(even){background:rgba(255,255,255,0.05);}
+    tr:hover{background:rgba(253,185,39,0.1);}
+    .player-img{
+      width:50px; height:50px;
+      border-radius:8px;
+      object-fit:cover;
+    }
+    caption{
+      caption-side: top;
+      text-align:left;
+      font-size:24px;
+      font-weight:700;
+      margin-bottom:10px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Los Angeles Lakers — Player Stats 2026</h1>
+    <div class="top-buttons">
+      <a href="file:///C:/Users/ALJON/Documents/WEBSITE%20PROJECT/start.html">Home</a>
+      <a href="file:///C:/Users/ALJON/Documents/WEBSITE%20PROJECT/rosteralakers.html">Roster</a>
+    </div>
+  </header>
+
+  <main>
+    <table>
+      <caption>Team Roster & Stats</caption>
+      <thead>
+        <tr>
+          <th>Player</th>
+          <th>Position</th>
+          <th>Jersey</th>
+          <th>Games Played</th>
+          <th>Points Per Game</th>
+          <th>Rebounds</th>
+          <th>Assists</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <img class="player-img" src="lebron.jpg" alt="LeBron James">
+            LeBron James
+          </td>
+          <td>Forward</td>
+          <td>6</td>
+          <td>72</td>
+          <td>25.0</td>
+          <td>7.5</td>
+          <td>7.0</td>
+        </tr>
+        <tr>
+          <td>
+            <img class="player-img" src="luka.jpg" alt="Luka Dončić">
+            Luka Dončić
+          </td>
+          <td>Guard</td>
+          <td>77</td>
+          <td>74</td>
+          <td>27.8</td>
+          <td>8.0</td>
+          <td>8.6</td>
+        </tr>
+        <tr>
+          <td>
+            <img class="player-img" src="deandre.jpg" alt="Deandre Ayton">
+            Deandre Ayton
+          </td>
+          <td>Center</td>
+          <td>22</td>
+          <td>70</td>
+          <td>18.2</td>
+          <td>11.0</td>
+          <td>1.5</td>
+        </tr>
+        <tr>
+          <td>
+            <img class="player-img" src="austin.jpg" alt="Austin Reaves">
+            Austin Reaves
+          </td>
+          <td>Guard</td>
+          <td>15</td>
+          <td>72</td>
+          <td>14.3</td>
+          <td>3.2</td>
+          <td>4.5</td>
+        </tr>
+        <!-- add more players here -->
+      </tbody>
+    </table>
+  </main>
+
+</body>
+</html>

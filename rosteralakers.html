@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Lakers Roster 2026</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    *{box-sizing:border-box;}
+    body{margin:0; font-family:'Roboto', sans-serif; background:#0f1115; color:#fff;}
+    
+    header{
+      background: linear-gradient(135deg,#552583,#FDB927);
+      padding:20px;
+      text-align:center;
+      box-shadow:0 4px 10px rgba(0,0,0,0.5);
+      position: relative;
+    }
+    header h1{margin:0; font-size:36px;}
+
+    .top-buttons{
+      position: absolute;
+      left:20px;
+      top:50%;
+      transform:translateY(-50%);
+      display:flex;
+      gap:10px;
+    }
+
+    .top-buttons a{
+      text-decoration:none;
+      padding:8px 16px;
+      border-radius:10px;
+      background:#FDB927;
+      color:#111;
+      font-weight:700;
+      transition:0.2s;
+    }
+    .top-buttons a:hover{
+      background:#fff;
+      color:#552583;
+    }
+
+    main{max-width:1000px; margin:30px auto; padding:0 20px;}
+    
+    .roster{
+      display:grid;
+      grid-template-columns: repeat(auto-fill,minmax(180px,1fr));
+      gap:16px;
+    }
+    
+    .player{
+      background: rgba(255,255,255,0.05);
+      padding:12px;
+      border-radius:12px;
+      text-align:center;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .player:hover{
+      transform: translateY(-5px);
+      box-shadow:0 12px 30px rgba(0,0,0,0.5);
+    }
+    .player img{
+      width:100px;
+      height:100px;
+      object-fit:cover;
+      border-radius:50%;
+      margin-bottom:10px;
+      border:2px solid #FDB927;
+    }
+    .player .name{font-weight:700; font-size:16px; margin-bottom:4px;}
+    .player .pos{color:#9aa0b4; font-size:14px;}
+    .player .jersey{font-size:14px; margin-top:4px; color:#FDB927;}
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Los Angeles Lakers — Roster 2026</h1>
+    <div class="top-buttons">
+      <a href="file:///C:/Users/ALJON/Documents/WEBSITE%20PROJECT/start.html">Home</a>
+      <a href="file:///C:/Users/ALJON/Documents/WEBSITE%20PROJECT/LakersStats.html">Stats</a>
+    </div>
+  </header>
+
+  <main>
+    <div class="roster">
+      <!-- Player 1 -->
+      <div class="player">
+        <img src="lebron.jpg" alt="LeBron James">
+        <div class="name">LeBron James</div>
+        <div class="pos">Forward</div>
+        <div class="jersey">#6</div>
+      </div>
+
+      <!-- Player 2 -->
+      <div class="player">
+        <img src="luka.jpg" alt="Luka Dončić">
+        <div class="name">Luka Dončić</div>
+        <div class="pos">Guard</div>
+        <div class="jersey">#77</div>
+      </div>
+
+      <!-- Player 3 -->
+      <div class="player">
+        <img src="deandre.jpg" alt="Deandre Ayton">
+        <div class="name">Deandre Ayton</div>
+        <div class="pos">Center</div>
+        <div class="jersey">#22</div>
+      </div>
+
+      <!-- Player 4 -->
+      <div class="player">
+        <img src="austin.jpg" alt="Austin Reaves">
+        <div class="name">Austin Reaves</div>
+        <div class="pos">Guard</div>
+        <div class="jersey">#15</div>
+      </div>
+
+      <!-- Add more players here -->
+    </div>
+  </main>
+
+</body>
+</html>

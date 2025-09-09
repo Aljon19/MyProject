@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Lakers 2026 — Simple Roster</title>
+  <style>
+    :root{
+      --purple:#552583;
+      --gold:#FDB927;
+      --bg:#f6f6f8;
+      --card:#ffffff;
+      --muted:#555;
+      --pad:12px;
+    }
+    html { scroll-behavior: smooth; }
+    body{
+      font-family: Arial, Helvetica, sans-serif;
+      margin:0; background:var(--bg); color:#222;
+    }
+
+    header{
+      background:var(--purple); color:white; padding:18px;
+      text-align:center;
+    }
+    header h1{ margin:0; font-size:20px; }
+    header nav{ margin-top:8px; }
+    header nav a{ color:var(--gold); margin:0 10px; text-decoration:none; font-weight:bold; }
+    header nav a:hover{ text-decoration:underline; }
+
+    .wrap{ width:92%; max-width:1100px; margin:18px auto; }
+
+    h2{ color:var(--purple); margin:8px 0 12px; }
+
+    /* grid */
+    .grid{
+      display:grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px,1fr));
+      gap:14px;
+    }
+
+    .card{
+      background:var(--card);
+      border:6px solid var(--purple);
+      border-radius:8px;
+      overflow:hidden;
+      text-align:center;
+      padding-bottom:20px;
+    }
+
+    .photo{
+      width:100%;
+      height:150px;
+      background:#ddd;
+      display:block;
+      object-fit:cover;
+    }
+
+    .name{ color:var(--purple); font-weight:700; padding:8px 6px 2px; }
+    .role{ color:var(--muted); font-size:14px; margin-bottom:8px; }
+
+    .view{
+      display:inline-block;
+      padding:6px 10px;
+      border-radius:6px;
+      background:var(--purple);
+      color:white;
+      text-decoration:none;
+      font-size:13px;
+      margin-top:6px;
+    }
+    .view:hover{ background: #3e1f61; }
+
+    /* simple details section */
+    .details{
+      margin-top:18px;
+      background:var(--card);
+      border:1px solid #ddd;
+      padding:14px;
+      border-radius:6px;
+    }
+    .details img{ width:160px; height:auto; display:block; margin:10px auto; border-radius:6px; }
+    .meta{ text-align:center; color:var(--muted); margin:6px 0 0; }
+    .statline{ text-align:center; margin-top:8px; color:#222; font-weight:600; }
+
+    /* news */
+    .news-item{
+      background:var(--card);
+      border-left:6px solid var(--gold);
+      padding:10px;
+      margin-bottom:10px;
+      border-radius:4px;
+    }
+
+    footer{ text-align:center; color:var(--muted); margin:26px 0 60px; }
+
+    /* small hover pop */
+    .card:hover{ transform: translateY(-4px); transition: transform .18s ease; }
+
+    /* responsive tweaks */
+    @media (max-width:560px){
+      .photo{ height:120px; }
+      .details img{ width:120px; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Los Angeles Lakers — 2026 Roster (simple)</h1>
+  <nav>
+    <a href="#roster">Roster</a>
+    <a href="#news">News</a>
+  </nav>
+</header>
+
+<main class="wrap">
+  <section id="roster">
+    <h2>Full Roster</h2>
+
+    <div class="grid">
+
+      <!-- 1 -->
+      <div class="card">
+        <img class="photo" src="https://cdn.nba.com/headshots/nba/latest/1040x760/2544.png" alt="LeBron James">
+        <div class="name">LeBron James</div>
+        <div class="role">Forward</div>
+        <a class="view" href="#lebron-james">View</a>
+      </div>
+
+      <!-- 2 -->
+      <div class="card">
+        <img class="photo" src="c:\Users\ALJON\Documents\Zoom\1629029.webp" alt="Luka Doncic">
+        <div class="name">Luka Dončić</div>
+        <div class="role">Guard</div>
+        <a class="view" href="#luka-doncic">View</a>
+      </div>
+
+      <!-- 3 -->
+      <div class="card">
+        <img class="photo" src="https://upload.wikimedia.org/wikipedia/commons/6/6b/Deandre_Ayton_Suns_%28cropped%29.jpg" alt="Deandre Ayton">
+        <div class="name">Deandre Ayton</div>
+        <div class="role">Center</div>
+        <a class="view" href="#deandre-ayton">View</a>
+      </div>
+
+      <!-- 4 -->
+      <div class="card">
+        <img class="photo" src="https://upload.wikimedia.org/wikipedia/commons/1/1a/Austin_Reaves_Lakers_%28cropped%29.jpg" alt="Austin Reaves">
+        <div class="name">Austin Reaves</div>
+        <div class="role">Guard</div>
+        <a class="view" href="#austin-reaves">View</a>
+      </div>
+
+      <!-- 5 -->
+      <div class="card">
+        <img class="photo" src="https://upload.wikimedia.org/wikipedia/commons/1/16/Marcus_Smart_%28Celtics%29_%28cropped%29.jpg" alt="Marcus Smart">
+        <div class="name">Marcus Smart</div>
+        <div class="role">Guard</div>
+        <a class="view" href="#marcus-smart">View</a>
+      </div>
+
+      <!-- 6 -->
+      <div class="card">
+        <img class="photo" src="https://upload.wikimedia.org/wikipedia/commons/b/b9/Rui_Hachimura_2019_Wizards_%28cropped%29.jpg" alt="Rui Hachimura">
+        <div class="name">Rui Hachimura</div>
+        <div class="role">Forward</div>
+        <a class="view" href="#rui-hachimura">View</a>
+      </div>
+
+      <!-- 7 -->
+      <div class="card">
+        <img class="photo" src="https://upload.wikimedia.org/wikipedia/commons/5/5b/Jarred_Vanderbilt_2019_%28cropped%29.jpg" alt="Jarred Vanderbilt">
+        <div class="name">Jarred Vanderbilt</div>
+        <div class="role">Forward</div>
+        <a class="view" href="#jarred-vanderbilt">View</a>
+      </div>
+
+      <!-- 8 -->
+      <div class="card">
+        <img class="photo" src="https://upload.wikimedia.org/wikipedia/commons/4/4b/Maxi_Kleber_2019.jpg" alt="Maxi Kleber">
+        <div class="name">Maxi Kleber</div>
+        <div class="role">Forward / Center</div>
+        <a class="view" href="#maxi-kleber">View</a>
+      </div>
+
+      <!-- 9 -->
+      <div class="card">
+        <img class="photo" src="https://upload.wikimedia.org/wikipedia/commons/2/21/Gabe_Vincent_Miami_Heat_%28cropped%29.jpg" alt="Gabe Vincent">
+        <div class="name">Gabe Vincent</div>
+        <div class="role">Guard</div>
+        <a class="view" href="#gabe-vincent">View</a>
+      </div>
+
+      <!-- 10 -->
+      <div class="card">
+        <img class="photo" src="https://upload.wikimedia.org/wikipedia/commons/5/5a/Jaxson_Hayes_2019.jpg" alt="Jaxson Hayes">
+        <div class="name">Jaxson Hayes</div>
+        <div class="role">Center</div>
+        <a class="view" href="#jaxson-hayes">View</a>
+      </div>
+
+      <!-- 11 -->
+      <div class="card">
+        <img class="photo" src="https://upload.wikimedia.org/wikipedia/commons/5/52/RJ_Davis_2023.jpg" alt="R.J. Davis">
+        <div class="name">R.J. Davis</div>
+        <div class="role">Guard</div>
+        <a class="view" href="#rj-davis">View</a>
+      </div>
+
+      <!-- 12 -->
+      <div class="card">
+        <img class="photo" src="https://upload.wikimedia.org/wikipedia/commons/9/90/Eric_Dixon_Villanova_2022.jpg" alt="Eric Dixon">
+        <div class="name">Eric Dixon</div>
+        <div class="role">Forward / Center</div>
+        <a class="view" href="#eric-dixon">View</a>
+      </div>
+
+      <!-- 13 -->
+      <div class="card">
+        <img class="photo" src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Arthur_Kaluma_2023.jpg" alt="Arthur Kaluma">
+        <div class="name">Arthur Kaluma</div>
+        <div class="role">Forward</div>
+        <a class="view" href="#arthur-kaluma">View</a>
+      </div>
+
+      <!-- 14 -->
+      <div class="card">
+        <img class="photo" src="https://upload.wikimedia.org/wikipedia/commons/4/4b/Adou_Thiero_2024.jpg" alt="Adou Thiero">
+        <div class="name">Adou Thiero</div>
+        <div class="role">Guard / Forward</div>
+        <a class="view" href="#adou-thiero">View</a>
+      </div>
+
+      <!-- 15 -->
+      <div class="card">
+        <img class="photo" src="https://upload.wikimedia.org/wikipedia/commons/0/0e/Augustas_Marciulionis_2022.jpg" alt="Augustas Marciulionis">
+        <div class="name">Augustas Marčiulionis</div>
+        <div class="role">Guard</div>
+        <a class="view" href="#augustas-marciulionis">View</a>
+      </div>
+
+      <!-- 16 -->
+      <div class="card">
+        <!-- no official photo provided earlier — simple colored SVG placeholder -->
+        <img class="photo" src="LUKA.jpg" alt="Chris Mañon">
+        <div class="name">Chris Mañon</div>
+        <div class="role">Guard (Two-way)</div>
+        <a class="view" href="#chris-manon">View</a>
+      </div>
+
+      <!-- 17 -->
+      <div class="card">
+        <img class="photo" src="https://upload.wikimedia.org/wikipedia/commons/0/06/Christian_Koloko_2023.jpg" alt="Christian Koloko">
+        <div class="name">Christian Koloko</div>
+        <div class="role">Center</div>
+        <a class="view" href="#christian-koloko">View</a>
+      </div>
+
+      <!-- 18 -->
+      <div class="card">
+        <img class="photo" src="https://upload.wikimedia.org/wikipedia/commons/1/19/Jake_LaRavia_2022.jpg" alt="Jake LaRavia">
+        <div class="name">Jake LaRavia</div>
+        <div class="role">Forward</div>
+        <a class="view" href="#jake-laravia">View</a>
+      </div>
+
+      <!-- 19 -->
+      <div class="card">
+        <img class="photo" src="https://upload.wikimedia.org/wikipedia/commons/f/fe/Bronny_James_2023_USC.jpg" alt="Bronny James">
+        <div class="name">Bronny James</div>
+        <div class="role">Guard</div>
+        <a class="view" href="#bronny-james">View</a>
+      </div>
+
+      <!-- 20 -->
+      <div class="card">
+        <img class="photo" src="https://upload.wikimedia.org/wikipedia/commons/5/5c/Dalton_Knecht_2024.jpg" alt="Dalton Knecht">
+        <div class="name">Dalton Knecht</div>
+        <div class="role">Forward</div>
+        <a class="view" href="#dalton-knecht">View</a>
+      </div>
+
+    </div> <!-- /grid -->
+  </section>
+
+  <section id="news" style="margin-top:22px;">
+    <h2>Latest News</h2>
+    <div class="news-item">
+      <strong>Roster Move:</strong> Deandre Ayton signs — added size for 2026.
+    </div>
+    <div class="news-item">
+      <strong>Contract:</strong> Austin Reaves declines early extension (tests market).
+    </div>
+  </section>
+
+  <!-- DETAILS (one simple block per player) -->
+  <section style="margin-top:22px;">
+    <h2>Player Details</h2>
+
+    <div class="details" id="lebron-james">
+      <img src="https://cdn.nba.com/headshots/nba/latest/1040x760/2544.png" alt="LeBron James">
+      <div style="text-align:center;"><strong>LeBron James</strong></div>
+      <div class="meta">Forward • 6'9" • 250 lb • Born Dec 30, 1984</div>
+      <div class="statline">PPG 24.4 • RPG 7.8 • APG 8.2</div>
+    </div>
+
+    <div class="details" id="luka-doncic">
+      <img src="LUKA.jpg" alt="Luka Doncic">
+      <div style="text-align:center;"><strong>Luka Dončić</strong></div>
+      <div class="meta">Guard • 6'6" • 230 lb • Born Feb 28, 1999</div>
+      <div class="statline">PPG 28.2 • RPG 8.2 • APG 7.7</div>
+    </div>
+
+    <div class="details" id="deandre-ayton">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/Deandre_Ayton_Suns_%28cropped%29.jpg" alt="Deandre Ayton">
+      <div style="text-align:center;"><strong>Deandre Ayton</strong></div>
+      <div class="meta">Center • 7'0" • 252 lb • Born Jul 23, 1998</div>
+      <div class="statline">PPG 14.4 • RPG 10.2 • APG 1.6</div>
+    </div>
+
+    <div class="details" id="austin-reaves">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/1/1a/Austin_Reaves_Lakers_%28cropped%29.jpg" alt="Austin Reaves">
+      <div style="text-align:center;"><strong>Austin Reaves</strong></div>
+      <div class="meta">Guard • 6'5" • 206 lb • Born May 29, 1998</div>
+      <div class="statline">PPG 20.2 • RPG 4.5 • APG 5.8</div>
+    </div>
+
+    <div class="details" id="marcus-smart">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/1/16/Marcus_Smart_%28Celtics%29_%28cropped%29.jpg" alt="Marcus Smart">
+      <div style="text-align:center;"><strong>Marcus Smart</strong></div>
+      <div class="meta">Guard • 6'4" • 220 lb • Born Mar 6, 1994</div>
+      <div class="statline">PPG 9.0 • RPG 2.1 • APG 3.2</div>
+    </div>
+
+    <div class="details" id="rui-hachimura">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/b/b9/Rui_Hachimura_2019_Wizards_%28cropped%29.jpg" alt="Rui Hachimura">
+      <div style="text-align:center;"><strong>Rui Hachimura</strong></div>
+      <div class="meta">Forward • 6'8" • 230 lb • Born Feb 8, 1998</div>
+      <div class="statline">PPG 13.6 • RPG 4.9 • APG 1.2</div>
+    </div>
+
+    <div class="details" id="jarred-vanderbilt">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/5/5b/Jarred_Vanderbilt_2019_%28cropped%29.jpg" alt="Jarred Vanderbilt">
+      <div style="text-align:center;"><strong>Jarred Vanderbilt</strong></div>
+      <div class="meta">Forward • 6'9" • 214 lb • Born Apr 3, 1999</div>
+      <div class="statline">PPG 5.2 • RPG 4.6 • APG 1.2</div>
+    </div>
+
+    <div class="details" id="maxi-kleber">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/4/4b/Maxi_Kleber_2019.jpg" alt="Maxi Kleber">
+      <div style="text-align:center;"><strong>Maxi Kleber</strong></div>
+      <div class="meta">Forward/Center • 6'10" • 240 lb • Born Jan 29, 1992</div>
+      <div class="statline">PPG 5.5 • RPG 3.3 • APG 1.0</div>
+    </div>
+
+    <div class="details" id="gabe-vincent">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/2/21/Gabe_Vincent_Miami_Heat_%28cropped%29.jpg" alt="Gabe Vincent">
+      <div style="text-align:center;"><strong>Gabe Vincent</strong></div>
+      <div class="meta">Guard • 6'3" • 200 lb • Born Jun 14, 1996</div>
+      <div class="statline">PPG 9.2 • RPG 2.1 • APG 3.0</div>
+    </div>
+
+    <div class="details" id="jaxson-hayes">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/5/5a/Jaxson_Hayes_2019.jpg" alt="Jaxson Hayes">
+      <div style="text-align:center;"><strong>Jaxson Hayes</strong></div>
+      <div class="meta">Center • 7'0" • 220 lb • Born May 23, 2000</div>
+      <div class="statline">PPG 4.3 • RPG 3.0 • APG 0.5</div>
+    </div>
+
+    <div class="details" id="rj-davis">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/5/52/RJ_Davis_2023.jpg" alt="R.J. Davis">
+      <div style="text-align:center;"><strong>R.J. Davis</strong></div>
+      <div class="meta">Guard • 6'0" • 180 lb • Born Oct 21, 2001</div>
+      <div class="statline">PPG — • RPG — • APG — (rookie)</div>
+    </div>
+
+    <div class="details" id="eric-dixon">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/9/90/Eric_Dixon_Villanova_2022.jpg" alt="Eric Dixon">
+      <div style="text-align:center;"><strong>Eric Dixon</strong></div>
+      <div class="meta">F/C • 6'8" • 255 lb • Born Jan 26, 2001</div>
+      <div class="statline">PPG — • RPG — • APG — (rookie)</div>
+    </div>
+
+    <div class="details" id="arthur-kaluma">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Arthur_Kaluma_2023.jpg" alt="Arthur Kaluma">
+      <div style="text-align:center;"><strong>Arthur Kaluma</strong></div>
+      <div class="meta">Forward • 6'7" • 225 lb • Born Mar 16, 2002</div>
+      <div class="statline">PPG — • RPG — • APG — (prospect)</div>
+    </div>
+
+    <div class="details" id="adou-thiero">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/4/4b/Adou_Thiero_2024.jpg" alt="Adou Thiero">
+      <div style="text-align:center;"><strong>Adou Thiero</strong></div>
+      <div class="meta">G/F • 6'8" • 222 lb • Born May 8, 2004</div>
+      <div class="statline">PPG — • RPG — • APG — (rookie)</div>
+    </div>
+
+    <div class="details" id="augustas-marciulionis">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/0/0e/Augustas_Marciulionis_2022.jpg" alt="Augustas Marciulionis">
+      <div style="text-align:center;"><strong>Augustas Marčiulionis</strong></div>
+      <div class="meta">Guard • 6'4" • 190 lb • Born Mar 16, 2002</div>
+      <div class="statline">PPG — • RPG — • APG — (rookie)</div>
+    </div>
+
+    <div class="details" id="chris-manon">
+      <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='400' height='300'><rect width='400' height='300' fill='%23552583'/><text x='200' y='170' font-size='56' text-anchor='middle' fill='%23FDB927' font-family='Arial'>CM</text></svg>" alt="Chris Mañon">
+      <div style="text-align:center;"><strong>Chris Mañon</strong></div>
+      <div class="meta">Guard • Two-way</div>
+      <div class="statline">PPG — • RPG — • APG —</div>
+    </div>
+
+    <div class="details" id="christian-koloko">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/0/06/Christian_Koloko_2023.jpg" alt="Christian Koloko">
+      <div style="text-align:center;"><strong>Christian Koloko</strong></div>
+      <div class="meta">Center • 7'1" • 230 lb • Born Jun 20, 2000</div>
+      <div class="statline">PPG — • RPG — • APG —</div>
+    </div>
+
+    <div class="details" id="jake-laravia">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/Jake_LaRavia_2022.jpg" alt="Jake LaRavia">
+      <div style="text-align:center;"><strong>Jake LaRavia</strong></div>
+      <div class="meta">Forward • 6'8" • 235 lb • Born Jan 10, 2001</div>
+      <div class="statline">PPG — • RPG — • APG —</div>
+    </div>
+
+    <div class="details" id="bronny-james">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/f/fe/Bronny_James_2023_USC.jpg" alt="Bronny James">
+      <div style="text-align:center;"><strong>Bronny James</strong></div>
+      <div class="meta">Guard • 6'2" • 210 lb • Born Oct 6, 2004</div>
+      <div class="statline">PPG 2.3 • RPG 0.7 • APG 0.8</div>
+    </div>
+
+    <div class="details" id="dalton-knecht">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/5/5c/Dalton_Knecht_2024.jpg" alt="Dalton Knecht">
+      <div style="text-align:center;"><strong>Dalton Knecht</strong></div>
+      <div class="meta">Forward • 6'6" • 215 lb • Born Apr 19, 2001</div>
+      <div class="statline">PPG 9.1 • RPG 2.8 • APG 0.8</div>
+    </div>
+
+  </section>
+
+  <footer>
+    <small>Unofficial fan roster — simple HTML & CSS. Edit names/stats/images freely.</small>
+  </footer>
+</main>
+
+</body>
+</html>
